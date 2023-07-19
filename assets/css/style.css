@@ -31,9 +31,9 @@
 /*===========================
     01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700,800&display=swap");
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #798795;
@@ -470,8 +470,11 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+  margin-bottom: 0; /* Adjust the margin as needed */
+
   width: 100%;
   z-index: 99;
+  
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -480,6 +483,7 @@ p {
 
 .headroom {
   will-change: transform;
+  
   transition: transform 200ms linear; }
 
 .headroom--not-top {
@@ -725,6 +729,10 @@ p {
 /*===== HEADER HERO =====*/
 .header-hero {
   height: 800px;
+  padding-top: 0px; /* Adjust the padding as needed */
+  padding-bottom: 150px; /* Adjust the padding-bottom value as needed */
+
+
   position: relative; }
   @media only screen and (min-width: 1400px) {
     .header-hero {
@@ -740,6 +748,8 @@ p {
   position: absolute;
   top: 0;
   right: 0;
+  padding-bottom: 250px; /* Adjust the padding-bottom value as needed */
+
   width: 47%;
   height: 100%; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -800,7 +810,7 @@ p {
     .header-hero-content .header-singup {
       margin-top: 60px; } }
   .header-hero-content .header-singup input {
-    width: 100%;
+    width: 70%;
     height: 70px;
     font-size: 24px;
     border: 0;
@@ -815,8 +825,9 @@ p {
         height: 56px; } }
   .header-hero-content .header-singup .main-btn {
     position: absolute;
+    
     top: 3px;
-    right: 3px;
+    right: 100px;
     height: 64px;
     line-height: 60px;
     padding: 0 40px;
@@ -1380,16 +1391,22 @@ p {
 .our-services-tab .our-services-content .services-title {
   font-size: 40px; }
   @media (max-width: 767px) {
+    
     .our-services-tab .our-services-content .services-title {
       font-size: 22px; } }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .our-services-tab .our-services-content .services-title {
+      
       font-size: 26px; } }
   .our-services-tab .our-services-content .services-title span {
     font-weight: 400;
     display: contents; }
 .our-services-tab .our-services-content .text {
-  margin-top: 35px; }
+  
+  margin-top: 35px; 
+  width: 100%; /* Adjust the width of the service content */
+
+}
 .our-services-tab .our-services-content .our-services-progress .circles-text {
   font-size: 24px !important;
   font-weight: 700;
@@ -1412,6 +1429,7 @@ p {
     font-size: 36px;
     color: #f14836; }
 .single-service-2 .service-content {
+  
   padding-left: 30px; }
   .single-service-2 .service-content .title a {
     font-weight: 600;
@@ -1419,11 +1437,18 @@ p {
     font-family: "Nunito", sans-serif;
     color: #222; }
   .single-service-2 .service-content .text {
+    
     padding-top: 20px; }
 
 /*===== SERVICE 3 =====*/
 .services-3 {
   border-top: 1px solid #dedede4f; }
+
+.single-service-2 .service-icon img,
+.single-service-3 .service-icon img {
+  max-width: 20%; /* Adjust the maximum width of the service images */
+  height: auto;
+}
 
 .single-service-3 .service-icon {
   display: inline-block;
@@ -1440,6 +1465,7 @@ p {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 .single-service-3 .service-content {
+  
   padding-top: 45px; }
   .single-service-3 .service-content .service-title a {
     font-size: 24px;
@@ -1455,6 +1481,7 @@ p {
   .single-service-3 .service-content .text {
     padding-top: 15px; }
   .single-service-3 .service-content .more {
+    
     color: #798795;
     font-size: 36px;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -1462,7 +1489,7 @@ p {
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    margin-top: 30px; }
+    margin-top: 500px; }
     .single-service-3 .service-content .more:hover {
       color: #f14836; }
 
@@ -1649,14 +1676,25 @@ p {
         08.BRAND css 
 ===========================*/
 .brand-wrapper {
-  border-top: 1px solid #dedede4f; }
-  .brand-wrapper .single-brand {
-    float: left;
-    width: 20%;
-    text-align: center; }
-    @media (max-width: 767px) {
-      .brand-wrapper .single-brand {
-        width: 50%; } }
+  overflow-x: auto;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: -5px; /* Adjust the negative margin as needed */
+}
+
+.single-brand {
+  flex: 0 0 auto;
+  margin: 5px; /* Adjust the margin between images as needed */
+}
+
+.single-brand img {
+  max-width: 100px;
+}
+
 
 /*===========================
          09.BL0G css 
@@ -2196,4 +2234,7 @@ p {
     .blog-ratting .ratting-list ul li a span {
       float: right; }
 
+     
 /*# sourceMappingURL=style.css.map */
+
+
