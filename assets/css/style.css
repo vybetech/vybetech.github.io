@@ -728,27 +728,27 @@ p {
 
 /*===== HEADER HERO =====*/
 .header-hero {
-  height: 800px;
+  height: 100px;
   padding-top: 0px; /* Adjust the padding as needed */
-  padding-bottom: 150px; /* Adjust the padding-bottom value as needed */
+  padding-bottom: 10px; /* Adjust the padding-bottom value as needed */
 
 
   position: relative; }
   @media only screen and (min-width: 1400px) {
     .header-hero {
-      height: 990px; } }
+      height: 800px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-hero {
-      height: auto; } }
+      height: 0px; } }
   @media (max-width: 767px) {
     .header-hero {
-      height: auto; } }
+      height: 0px; } }
 
 .header-hero-image {
   position: absolute;
   top: 0;
   right: 0;
-  padding-bottom: 250px; /* Adjust the padding-bottom value as needed */
+  padding-bottom: 0px; /* Adjust the padding-bottom value as needed */
 
   width: 47%;
   height: 100%; }
@@ -757,7 +757,7 @@ p {
       width: 720px;
       position: relative;
       margin: 0 auto;
-      padding-top: 50px; } }
+      padding-top: 0px; } }
   @media (max-width: 767px) {
     .header-hero-image {
       width: 100%;
@@ -773,10 +773,10 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-hero-content {
-    padding-top: 150px; } }
+    padding-top: 50px; } }
 @media (max-width: 767px) {
   .header-hero-content {
-    padding-top: 150px; } }
+    padding-top: 50px; } }
 .header-hero-content .hero-title {
   font-size: 60px;
   font-weight: 400;
@@ -801,7 +801,7 @@ p {
   padding-top: 40px; }
 .header-hero-content .header-singup {
   position: relative;
-  margin-top: 120px;
+  margin-top: 100px;
   z-index: 9; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-hero-content .header-singup {
@@ -941,7 +941,7 @@ p {
 
 /*===== ABOUT 2 =====*/
 .about-content-2 .about-line {
-  padding-top: 10px; }
+  padding-top: 0px; }
   .about-content-2 .about-line li {
     height: 5px;
     background-color: #fde4e1;
@@ -957,7 +957,7 @@ p {
     .about-content-2 .about-line li:nth-of-type(4) {
       width: 5px; }
 .about-content-2 .text {
-  padding-top: 15px; }
+  padding-top: 0px; }
 
 /*===========================
        04.GALLERY css 
